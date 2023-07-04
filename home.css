@@ -1,17 +1,57 @@
 * {
     box-sizing: border-box;
-
+    margin: 0;
 }
 
-div {
+body {
+    font-family: sans-serif;
+    text-align: left;
+    background: #ddd;
+}
+
+/* h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 25px;
+    text-align: left;
+    color: #313139;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin: 0;
+}
+p {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 22px;
+    color: #313139;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin: 0;
+    padding-bottom: 15%
+} */
+/* div {
     margin: 15px;
-}
+} */
 
 .header {
     background-color: #dcb7ee;
     color: #ffffff;
     padding: 15px;
 }
+/* 
+.footer {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    min-height: 100px;
+    border-radius: 5pt;
+    text-align: center;
+    vertical-align: center;
+    font-size: 12px;
+    vertical-align: text-bottom;
+} */
 
 .footer {
     background-color: #0099cc;
@@ -45,3 +85,61 @@ div a{
     background-color: aliceblue;
     color: rgb(255, 153, 0);
 }
+
+.ball-1{
+    position: absolute;
+    /* width: 100%; */
+    }
+    
+    .ball-left{
+      position: relative;
+      left:-30%;
+    }
+    
+    .text-1 p{
+      width: 500px; 
+      line-height: 50px;
+      letter-spacing: 3px;
+      font-size: 22px;
+      position: relative;
+      top: -700px;
+      left: 100px;
+    
+    }
+    .photo-1{
+      position: relative;
+      left: 700px;
+      top: -900px;
+    }
+    
+    .ball-2{
+      position: absolute;
+      top: 750px;
+      /* width: 100%; */
+      }
+    
+    .ball-right{
+      position: relative;
+      left: 40%;
+    }
+    .text-2 p{
+      width: 400px; 
+      line-height: 50px;
+      letter-spacing: 3px;
+      font-size: 22px;
+      position: relative;
+      top: -800px;
+      right: -800px;
+    
+    }
+    
+    .p-1 {
+      position: relative;
+      left: 100px;
+      top: -1300px;
+    }
+    .p-2 {
+      position: relative;
+      left: -15px;
+      top: -1050px;
+    }

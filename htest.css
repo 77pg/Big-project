@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: left;
+    background: #ddd;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 25px;
+    text-align: left;
+    color: #313139;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 22px;
+    color: #313139;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin: 0;
+    padding-bottom: 15%
+}
+
+
+#main {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+
+}
+
+#main > B {
+    margin: 10px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5pt;
+    background: #fff;
+    box-shadow: 1px 2px 5px #c6c6c6;
+    flex: 3 1 33.3%;
+    order: 2;
+}
+
+#main > A {
+    margin: 10px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5pt;
+    background: #fff;
+    box-shadow: 1px 2px 5px #c6c6c6;
+    flex: 3 1 33.3%;
+    order: 1;
+}
+
+#main > C {
+    margin: 10px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5pt;
+    background: #fff;
+    box-shadow: 1px 2px 5px #c6c6c6;
+    flex: 3 1 33.3%;
+    order: 3;
+}
+
+header {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100px;
+    border-radius: 0pt;
+    background: #76D8FF;
+}
+.menu {
+    display: flex;
+    flex: 0 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.main ul li a{
+    text-decoration:none;
+}
+
+.wrapper {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5pt;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    background-color: #fff;
+    color: #444;
+  }
+
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+
+.a {
+  grid-column: auto / span 2;
+}
+
+.k {
+  grid-column: auto / span 3;
+}
+
+.g {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
+
+footer {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    min-height: 100px;
+    border-radius: 5pt;
+    text-align: center;
+    vertical-align: center;
+    font-size: 12px;
+    vertical-align: text-bottom;
+}
+
+img {
+    height: auto;
+    width: 90%;
+    padding-top: 5%;
+
+}
+
+header > img {
+    height: auto;
+    width: 18%;
+    padding: 3% 1% 2% 5%;
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+
+    #main,
+    #page {
+        flex-direction: column;
+    }
+
+    #main > B,
+    #main > A,
+    #main > C {
+        /* Return them to document order */
+        order: 0;
+    }
+
+
+    header,
+    footer {
+        min-height: 50px;
+    }
+}
