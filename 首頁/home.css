@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  padding: 15px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #aaa;
+}
+.menu h1 {
+  text-align: end;
+  width: 50%;
+}
+.menu>ul {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 15px;
+  list-style-type: none;
+}
+.menu img {
+  width: 25px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 8px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.itemoutsid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.itemimg,.itemtxt {
+  width: 50%;
+}
+.itemimg img {
+  width: 460px;
+  box-shadow: 30px 30px 0 0 #f3c5e2;
+}
+.itemcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemcontent img {
+  width: 20px;
+  cursor: pointer;
+}
+.itemtxt {
+  margin: 0 30px;
+  line-height: 30px;
+}
+.itemtxt h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.itemtxt .more {
+  margin-top: 20px;
+  padding: 5px 0;
+  background-color: white;
+  width: 100px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+.content {
+  margin: 100px 0;
+}
+.ball-1 {
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+.ball-1::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-image: url("./img/y-ball.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: -200px;
+  top: -50px;
+  z-index: -3;
+}
+.ball-left {
+  width: 280px;
+  float: left;
+}
+.ball-left p {
+  font-size: 18px;
+  line-height: 35px;
+}
+.mask {
+  width: 50%;
+  height: 60px;
+}
+.photo-1 {
+  width: 50%;
+  float: right;
+}
+.photo-1 img{
+  width: 100%;
+}
+.ball-2{
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+.photo-2{
+  width: 40%;
+  float: left;
+  margin-top: 30px;
+}
+.photo-2 img{
+  width: 100%;
+}
+.text-2{
+  width: 280px;
+  float: right;
+}
+.text-2 p{
+  line-height: 35px;
+  font-size: 18px;
+}
+.ball-2::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-image: url("./img/b-ball.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  right: -200px;
+  top: 150px;
+  z-index: -3;
+}
+
+
+
+/* 方形輪播 */
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.wrapper {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+.linear-gradient {
+  width: 1200px;
+  height: 250px;
+  background-image: linear-gradient(to right, rgba(255, 208, 239, 1), rgba(255, 236, 186, 0.56));
+  position: absolute;
+  z-index: -1;
+  top: 200px;
+}
+.wrapper i {
+  top: 200px;
+  right: 220px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:last-child {
+  right: 200px;
+}
+.wrapper .carousel {
+  margin-left: 120px;
+  width: 70%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 8cm;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 345px;
+  list-style: none;
+  background: #fff0;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  height: 150px;
+  width: 150px;
+  margin-top: 80px;
+  border: 3px solid #000;
+}
+.card .img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.footer{
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
